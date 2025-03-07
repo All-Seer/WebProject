@@ -1,0 +1,41 @@
+:root {
+    --md-sys-color-primary: #2E3D1F;
+    --md-sys-color-secondary: #2E3D1F;
+    --md-sys-color-surface: #ffffff;
+    --md-sys-color-on-surface: #000000;
+
+    --md-sys-font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    height: 100%;
+}
+
+.parentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+
+.parentContainer>div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.leftContainer {
+    background-color: #2E3D1F;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rightContainer {
+    background-color: #ffffff;
+}
