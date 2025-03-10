@@ -45,6 +45,7 @@ html, body {
   margin-top: 50px;
 }
 
+
 .leftContainer {
   display: flex;
   background-color: #2E3D1F;
@@ -78,10 +79,11 @@ md-outlined-button {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 60px;
+  font-size: 500%;
   margin-top: 150px;
   margin-bottom: 140px;
 }
+
 
 .middleContainer {
   display: flex;
@@ -93,10 +95,9 @@ md-outlined-button {
 
 md-outlined-text-field {
   --md-outlined-text-field-container-height: 60px; 
-  --md-outlined-text-field-input-text-size: 20px; 
   --md-outlined-text-field-label-text-size: 18px;
   --md-outlined-text-field-input-text-line-height: 20px;
-
+  --md-outlined-text-field-input-text-size: 20px; 
   width: 500px; 
   margin-bottom: 70px;
 }
@@ -141,4 +142,67 @@ md-filled-button{
   --md-filled-button-label-text-size: 16px;
   width: 400px;
   margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .parentContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rightContainer {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .parentContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .leftContainer, .middleContainer, .rightContainer {
+    grid-column: span 1;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .text1 {
+    font-size: 300%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  md-outlined-text-field, md-outlined-select {
+    margin-top: 10%;
+    width: 90%;
+  }
+
+  md-outlined-button, md-filled-button {
+    width: 90%;
+  }
+
+  .notif {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text1 {
+    font-size: 200%;
+  }
+
+  .notif {
+    font-size: 30px;
+  }
+
+  md-outlined-text-field, md-outlined-select {
+    width: 100%;
+  }
+
+  md-outlined-button, md-filled-button {
+    width: 100%;
+  }
 }

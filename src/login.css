@@ -160,10 +160,110 @@ md-outlined-button {
     --md-outlined-button-focus-label-text-color: var(--md-sys-color-primary);
 }
 
-md-filled-button{
+md-filled-button {
     --md-filled-button-container-height: 40px;
     --md-filled-button-label-text-size: 16px;
     width: 400px;
     margin-top: 20px;
     margin-bottom: 50px;
-  }
+}
+
+
+@media (max-width: 1200px) {
+    .parentContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .leftContainer {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .rightContainer {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .text1 {
+        font-size: 50px;
+    }
+
+    .text2 {
+        font-size: 40px;
+    }
+
+    .text3 {
+        font-size: 60px;
+    }
+
+    md-outlined-text-field,
+    md-outlined-button,
+    md-filled-button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .text1 {
+        font-size: 40px;
+    }
+
+    .text2 {
+        font-size: 30px;
+    }
+
+    .text3 {
+        font-size: 50px;
+    }
+
+    .address {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    md-outlined-text-field,
+    md-outlined-button,
+    md-filled-button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text1 {
+        font-size: 30px;
+    }
+
+    .text2 {
+        font-size: 25px;
+    }
+
+    .text3 {
+        font-size: 40px;
+    }
+
+    .address {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    md-outlined-text-field,
+    md-outlined-button,
+    md-filled-button {  
+        width: 80   %;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
