@@ -1,11 +1,30 @@
 {
   "dependencies": {
-    "@material/web": "^2.2.0"
+    "@material/web": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.13.0"
   },
   "devDependencies": {
     "vite": "^6.2.1"
   },
   "scripts": {
-  "start": "vite"
-}
+    "start": "vite"
+  },
+  "name": "webproject",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/All-Seer/WebProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/All-Seer/WebProject/issues"
+  },
+  "homepage": "https://github.com/All-Seer/WebProject#readme",
+  "description": ""
 }
